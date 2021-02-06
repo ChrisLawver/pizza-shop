@@ -11,12 +11,18 @@ namespace Choose_Your_Class
         {
 
             Pizza pizza = new Pizza();
+            Console.WriteLine("Welcome to the Pizza Console App!\n");
+            Console.WriteLine("What Pizza Shop would you like to visit?");
+            pizza.Name = Console.ReadLine();
+            Console.WriteLine("What city are you in?");
+            pizza.Location = Console.ReadLine();
 
             bool active = true;
 
             while (active == true)
             {
-                Console.WriteLine("Welcome to the Pizza Shop!\n");
+                Console.Clear();
+                Console.WriteLine($"Welcome to {pizza.Name} in {pizza.Location}!\n");
 
                 Console.WriteLine("What kind of pizza would you like?");
                 Console.WriteLine("1. Choose the size of your pizza");
@@ -128,7 +134,7 @@ namespace Choose_Your_Class
                                 
                             }
                             active = false;
-                            Console.WriteLine($"Your total is { pizza.PriceOfPizza():C}");
+                            Console.WriteLine($"\nYour total is { pizza.PriceOfPizza():C}");
                             Console.WriteLine("Enjoy your pizza!");
                         }
                         break;

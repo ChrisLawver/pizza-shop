@@ -6,25 +6,25 @@ namespace Choose_Your_Class
 {
     public class Pizza
     {
-        //Pizza pizza = new Pizza();
-
+        public string Name { get; set; }
+        public string Location { get; set; }
         public string Size { get; set; }
         public int NumberOfToppings { get; set; }
         public bool StuffedCrust { get; set; }
 
         public List<string> toppings = new List<string>();
 
-        public Pizza()
-        {
+        //public Pizza()
+        //{
 
-        }
+        //}
 
-        public Pizza(string size, int numberOfToppings, bool stuffedCrust)
-        {
-            Size = size;
-            NumberOfToppings = numberOfToppings;
-            StuffedCrust = stuffedCrust;
-        }
+        //public Pizza(string size, int numberOfToppings, bool stuffedCrust)
+        //{
+        //    Size = size;
+        //    NumberOfToppings = numberOfToppings;
+        //    StuffedCrust = stuffedCrust;
+        //}
 
         public string SelectPizzaSize(string pizzaSize)
         {
